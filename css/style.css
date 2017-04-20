@@ -1,0 +1,148 @@
+@font-face {
+	font-family: HelveticaNeueCyr-light;
+	src: url(../fonts/helveticaneuecyr-light.ttf);
+}
+@font-face {
+	font-family: HelveticaNeueCyr-Thin;
+	src: url(../fonts/helveticaneuecyr-thin.otf);
+}
+@font-face {
+	font-family: HelveticaNeueCyr-roman;
+	src: url(../fonts/helveticaneuecyr-roman.otf);
+}
+header {
+	padding-left: 15px;
+	height: 155px;
+}
+menu {
+	overflow: hidden;
+	padding-left: 0;
+}
+
+menu ul {
+	display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+menu a {
+	list-style: none;
+	font-size: 18px;
+	font-family: HelveticaNeueCyr-light;
+	color: rgba(66, 65, 65, 0.702);
+	float: left;
+
+
+}
+menu a:hover, .active {
+	color: #95c002;
+	text-decoration: none;
+}
+header form #search {
+	width: 100%;
+	height: 45px;
+	padding: 0 52px 1px 15px;
+	font: 18px HelveticaNeueCyr-light;
+	display: inline-block;
+	position: relative;
+}
+header form #btn {
+	width: 50px;
+	height: 45px;
+	cursor: pointer;
+	background: url('../images/search.png');
+	background-repeat: no-repeat;
+	background-position: center; 
+	position: absolute;
+	bottom: 0;
+	right:15px;
+	border: none;
+}
+.akk img {
+	padding: 6px 0 0 25px;
+}
+
+#logo {
+	padding-top: 18px;
+}
+
+.contacts {
+	padding-top: 10px;
+}
+
+.contacts #number{
+	font-family: HelveticaNeueCyr-Thin;
+	font-size: 30px;
+	color: rgb(66, 65, 65);
+	text-align: left;
+}
+.contacts #work{
+	font-family: HelveticaNeueCyr-light;
+	font-size: 17px;
+	color: rgb(66, 65, 65);
+
+	text-align: left;
+}
+
+/*MENU*/
+.menu {
+	width:100%;
+	max-height: 65px;
+	background-color: #ef3b3a;
+	overflow: hidden;
+}
+.menucontent {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.menucontent .mainmenu li {
+	float: left;
+}
+
+.main-menu li a{
+	font-family: 'HelveticaNeueCyr-roman';
+	font-size: 24px;
+	color:#fff;
+	text-decoration: none;
+	display: inline-block;
+	line-height: 65px;
+
+}
+
+.main-menu  li:first-child {
+	list-style: none;
+	padding-left: 0px;
+}
+.main-menu  li:last-child {
+	padding-right: 0px;
+}
+.sub-menu {
+	display: none;
+}
+
+
+/*
+.main-menu li {
+	float: left;
+	padding-left: 40px;
+	padding-right: 45px;
+	list-style-position: initial; 
+	display: inline-block;
+	line-height: 65px;
+	padding-top: 0;
+}/*
+.menu ul li a{
+	font-family: 'HelveticaNeueCyr-roman';
+	font-size: 24px;
+	color:#fff;
+	text-decoration: none;
+	display: inline-block;
+	line-height: 65px;
+}
+.main-menu  li:first-child {
+	list-style: none;
+	padding-left: 30px;
+}
+.main-menu  li:last-child {
+	padding-right: 30px;
+}
