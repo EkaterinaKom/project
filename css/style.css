@@ -87,62 +87,100 @@ header form #btn {
 /*MENU*/
 .menu {
 	width:100%;
-	max-height: 65px;
+	height: 65px;
 	background-color: #ef3b3a;
-	overflow: hidden;
+
+	padding: 0;
 }
 .menucontent {
 	max-width: 1170px;
 	margin: 0 auto;
 }
-.menucontent .mainmenu li {
-	float: left;
-}
+.main-menu {
+	max-width: 1170px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
 
-.main-menu li a{
+}
+.main-menu li > a {
+    display: block;
 	font-family: 'HelveticaNeueCyr-roman';
 	font-size: 24px;
 	color:#fff;
-	text-decoration: none;
-	display: inline-block;
+	height: 65px;
 	line-height: 65px;
-
+	padding-right: 50px;
 }
 
-.main-menu  li:first-child {
-	list-style: none;
-	padding-left: 0px;
-}
-.main-menu  li:last-child {
-	padding-right: 0px;
-}
-.sub-menu {
-	display: none;
+.main-menu > li:last-child a {
+	padding-right: 0;
 }
 
-
-/*
-.main-menu li {
+.main-menu a:hover {
+	text-decoration: none;
+	color:#fff;
+}
+.main-menu > li {
+	position: relative;
 	float: left;
+	list-style: none;
+	display: block;
 	padding-left: 40px;
-	padding-right: 45px;
-	list-style-position: initial; 
-	display: inline-block;
-	line-height: 65px;
-	padding-top: 0;
-}/*
-.menu ul li a{
-	font-family: 'HelveticaNeueCyr-roman';
-	font-size: 24px;
-	color:#fff;
-	text-decoration: none;
-	display: inline-block;
-	line-height: 65px;
 }
-.main-menu  li:first-child {
+.main-menu > li:first-child {
 	list-style: none;
-	padding-left: 30px;
+	margin-left: 30px;
+	padding-left: 0;
 }
-.main-menu  li:last-child {
-	padding-right: 30px;
+.main-menu > li:last-child {
+	margin-right: 15px;
 }
+.main-menu .sub-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #ef3b3a;
+    position: absolute;
+    display: none;
+    z-index: 100;
+}
+.main-menu > li:hover .sub-menu {
+	display: block;
+}
+
+.sub-menu li >a{
+	font-family: 'HelveticaNeueCyr-roman';
+	font-size: 22px;
+	display: block;
+	line-height: 46px;
+	border-top: 1px solid #f26261;
+	padding: 0;
+	margin: 0;
+	height: 46px;
+	padding-left: 15px;
+	padding-right: 10px;
+
+}
+.sub-menu li >a:hover {
+	background: #f26261;
+}
+.main-menu > li:first-child::before {
+	content: "";
+	background: none;
+}
+
+.main-menu > li::before {
+	content: "";
+	background: url(../images/circle.png) no-repeat left top;
+	position: absolute;
+	height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 0;
+    top: 28px;
+}
+
+
