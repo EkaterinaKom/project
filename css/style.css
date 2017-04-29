@@ -10,6 +10,9 @@
 	font-family: HelveticaNeueCyr-roman;
 	src: url(../fonts/helveticaneuecyr-roman.otf);
 }
+
+/*HEADER*/
+
 header {
 	padding-left: 15px;
 	height: 155px;
@@ -83,6 +86,8 @@ header form #btn {
 
 	text-align: left;
 }
+
+
 
 /*MENU*/
 .menu {
@@ -182,5 +187,117 @@ header form #btn {
     left: 0;
     top: 28px;
 }
+
+
+/*баннер на слайдере*/
+
+.slider {
+	position: relative;
+	height: 460px;
+}
+.slider .carousel, .slider .carousel-inner, .slider #myCarousel, .item {
+	height: 460px;
+}
+.slider .item img {
+	height: 460px;
+}
+
+#banner {
+	width: 600px;
+	height: 230px;
+	background-color: rgba(255, 255, 255, 0.8);
+  	/*opacity: 0.8;*/
+/*  	position: absolute;
+  	left: 370px;
+  	top: 340px;
+  	z-index: 5;*/
+  	margin: 12px;
+  }
+  #bannerOutline {
+  	width: 630px;
+  	height: 260px;
+  	border: 4px solid ;
+  	border-color: rgba(255,255,255, 0.8);
+  	/*opacity: 0.8;*/
+  	/*position: absolute;*/
+  	margin: 0 auto;
+  	/*top: 310px;*/
+  	z-index: 5;
+
+  }
+#bannerBtn {
+	width: 242px;
+	height: 74px;
+	background: #95c002;
+	font-family: 'HelveticaNeueCyr-roman';
+	font-size: 30px;
+	z-index: 20;
+	color: #fff;
+	/*left: 554px;*/
+  	/*top: 533px;*/
+  	opacity: 1;
+  	margin: 0 auto;
+	padding:0;
+	border: none;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	display: block;
+
+
+}
+#sliderBan {
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 310px;
+	z-index: 2;
+
+
+}
+#btncont {
+	position: absolute;
+	top: 533px;
+	width: 100%;
+	overflow: hidden;
+	z-index: 100;
+}
+
+#banText {
+	color: #424141;
+	width: 493px;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+
+
+#a  {
+	font-family: 'HelveticaNeueCyr-roman';
+	font-size: 50px;
+	text-transform: uppercase;
+	display: inline-block;
+	padding-top: 20px;
+/*	font-weight: 600;*/
+}
+#b {
+	font-family: 'HelveticaNeueCyr-roman';
+	font-size: 30px;
+	display: inline-block;
+	padding-top: 7px;
+}
+#c {
+	font-family: 'HelveticaNeueCyr-light';
+	font-size: 24px;
+	font-style: italic;
+	display: inline-block;
+	padding-top: 20px;
+}
+
+
+
+
+
+
+
+
 
 
